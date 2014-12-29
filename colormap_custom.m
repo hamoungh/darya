@@ -1,0 +1,9 @@
+gl = 1:256;
+rOffset = 256*rand(1,1);
+gOffset = 256*rand(1,1);
+bOffset = 256*rand(1,1);
+period = 50;
+cmapR = (sin((gl-rOffset)/period)+1)/2;
+cmapG = (sin((gl-gOffset)/period)+1)/2;
+cmapB = (sin((gl-bOffset)/period)+1)/2;
+cmap = [cmapR; cmapG; cmapB]';
